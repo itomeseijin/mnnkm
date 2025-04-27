@@ -2,7 +2,7 @@
 <html lang="ja">
     <head>
         <meta charset="UTF-8" />
-        <title>SSV危機一髪</title>
+        <title>MNN危機一髪</title>
         <meta name="viewport" content="width=device-width, initial-scale=0.75, maximum-scale=1, user-scalable=0">
         <style>
             canvas{
@@ -109,8 +109,8 @@
             mnn1.src = "imgs/mnn01.PNG";
             mnn2.src = "imgs/mnn02.PNG";
             mnn3.src = "imgs/mnn03.PNG";
-            ssv1.src = "imgs/ssv01.PNG";
-            ssv2.src = "imgs/ssv02.PNG";
+            ssv1.src = "imgs/kuma01.PNG";
+            ssv2.src = "imgs/kuma02.PNG";
             pow1.src = "imgs/barEmpty.PNG";
             pow2.src = "imgs/bar.PNG";
             onp.src = "imgs/onp.PNG";
@@ -233,7 +233,6 @@
                     //game over
                     if (mnnPos.x + mnn1.width >= ssvs[i].x + 56 && mnnPos.x <= ssvs[i].x + 56 && mnnPos.y + mnn1.height >= ssvs[i].y && mnnPos.y <= ssvs[i].y + ssv1.height - 60) {
                         alert("あ！　触っちゃった！\n倒した数：" + killCnt);
-                        //console.log("暴走したセーラーシェーブに触ってしまった。\n倒した数：" + killCnt);
                         current = 0;
                         attackCnt = 0;
                         mnnPos = {x:20, y:200};
